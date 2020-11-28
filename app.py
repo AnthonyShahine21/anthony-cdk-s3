@@ -6,6 +6,6 @@ from anthony_cdk_s3.anthony_cdk_s3_stack import AnthonyCdkS3Stack
 
 
 app = core.App()
-AnthonyCdkS3Stack(app, "anthony-cdk-s3")
+AnthonyCdkS3Stack(app, "anthony-cdk-s3", env={'region': 'eu-west-1'})
 
 app.synth()
